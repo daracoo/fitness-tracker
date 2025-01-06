@@ -16,7 +16,30 @@ class BottomNavigation extends StatelessWidget {
             children: [
               Icon(Icons.add_chart),
               Icon(Icons.search),
-              Icon(Icons.home),
+              Transform.translate(
+                offset: Offset(0, -15),
+                child: Container(
+                    padding: const EdgeInsets.all(13),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                          colors: [
+                            Color(0xffffc1c1),
+                            Color (0xffff3b3b)
+                          ]
+                      ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black26,
+                        offset: Offset(3, 3),
+                        blurRadius: 3
+                      )
+                    ]
+                    ),
+                    child: Icon(Icons.home, color: Colors.white,),
+                ),
+              ),
               Icon(Icons.date_range),
               Icon(Icons.settings),
             ],
