@@ -9,13 +9,15 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        AppHeader(),
-        CurrentPrograms(),
-        RecentActivities(),
-        BottomNavigation()
-      ],
+    return Scaffold(
+        body: Column(
+        children: [
+          AppHeader(),
+          CurrentPrograms(),
+          RecentActivities(),
+          BottomNavigation()
+        ],
+      ),
     );
   }
 }
