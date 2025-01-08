@@ -64,7 +64,7 @@ class ActivityItem extends StatelessWidget {
             padding: const EdgeInsets.all(4),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: Color(0xffcff2ff),
+              color: Color(0xfff87676),
             ),
             height: 35,
             width: 35,

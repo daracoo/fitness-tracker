@@ -1,3 +1,4 @@
+import 'package:fitness_tracker/pages/details/widgets/appbar.dart';
 import 'package:fitness_tracker/pages/details/widgets/dates.dart';
 import 'package:fitness_tracker/pages/details/widgets/graph.dart';
 import 'package:fitness_tracker/pages/details/widgets/info.dart';
@@ -12,6 +13,7 @@ class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const MainAppBar(),
       body: Column(
         children: [
           Dates(),
@@ -19,7 +21,7 @@ class DetailsPage extends StatelessWidget {
           Graph(),
           Info(),
           Stats(),
-          BottomNavigation()
+          BottomNavigation(),
         ],
       ),
     );
